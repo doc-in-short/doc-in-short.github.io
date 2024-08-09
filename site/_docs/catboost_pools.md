@@ -5,7 +5,6 @@ title: Catboost pools
 
 ### 1. Describe features
 
-{% include code-header.html %}
 ```python
 float_features = [
     '',

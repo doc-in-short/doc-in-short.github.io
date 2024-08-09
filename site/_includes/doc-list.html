@@ -1,0 +1,18 @@
+{%- if site.docs.size > 0 -%}
+<ul class="doc-list">
+    <table class="noborder">
+        {% assign sorted_docs = site.docs | sort:"order" %}
+        {%- for doc in sorted_docs -%}
+        <tr class="noborder">
+            <td class="noborder">
+                <h4>
+                    <a class="doc-link" href="{{ doc.url | relative_url }}">
+                        {{ doc.title | escape }}
+                    </a>
+                </h4>
+            </td>
+        </tr>
+        {%- endfor -%}
+    </table>
+</ul>
+{%- endif -%}

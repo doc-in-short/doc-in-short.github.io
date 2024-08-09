@@ -1,0 +1,23 @@
+title: Doc In Short
+description: >-
+  Doc In Short is intended for experienced ML engineers
+  who want some short explanation for things they already know with code examples
+baseurl: ""
+url: ""
+github_username: roma1n
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+permalink: /:categories/:title
+
+collections:
+  docs:
+    output: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
